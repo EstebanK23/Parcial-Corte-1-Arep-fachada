@@ -7,9 +7,9 @@ import org.json.JSONObject;
 
 public class Fachada {
 
-    public static JSONObject direccion(String url) throws UnirestException {
+    public static String direccion(String url) throws UnirestException {
         HttpResponse<String> response = Unirest.get(url).asString();
-        return new JSONObject(response.getBody());
+        return response.getBody();
     }
 
 }

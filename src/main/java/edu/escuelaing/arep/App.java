@@ -13,7 +13,7 @@ public class App {
         get("/", (req, res) -> {
             Double number = Double.parseDouble(req.queryParams("value"));
             String function = req.queryParams("Operation");
-            String url= "https://thawing-earth-58973.herokuapp.com/?valor="+number+"&Operation="+function;
+            String url= "https://thawing-earth-58973.herokuapp.com/?value="+number+"&Operation="+function;
             return Fachada.direccion(url);
         });
     }
@@ -27,6 +27,6 @@ public class App {
 
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 4567;
+        return 1234;
     }
 }
