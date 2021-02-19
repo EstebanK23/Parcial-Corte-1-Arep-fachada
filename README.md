@@ -1,3 +1,3 @@
 # Parcial-1-Arep
 
-https://thawing-earth-58973.herokuapp.com/?value=3.14&Operation=cos
+https://frozen-reef-56749.herokuapp.com/
